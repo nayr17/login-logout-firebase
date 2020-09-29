@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Login"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/Linear1"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/Linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="enter email"
+            android:textColorHint="#000"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/userPass"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColorHint="#000"
+            android:hint="enter password"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLoginUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textStyle="bold"
+        android:layout_below="@+id/Linear1"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewCreateuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLoginUser"
+        android:text="Don't have an account? Signup here"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+
+</RelativeLayout>

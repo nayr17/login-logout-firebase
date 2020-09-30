@@ -15,18 +15,44 @@
         android:text="TextView"
         android:textSize="30dp"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="80dp"
         android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/userFullname"
+        android:layout_below="@+id/textViewUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter full name"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/userAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userFullname"
+        android:hint="Enter address"
+        android:paddingLeft="20dp"/>
+
+    <Button
+        android:id="@+id/btnSaveInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save information"
+        android:layout_below="@+id/userAddress"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"/>
 
     <Button
         android:id="@+id/btnLogoutUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Logout"
-        android:layout_below="@+id/textViewUser"
+        android:layout_below="@+id/btnSaveInfo"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        />
+        android:layout_marginTop="5dp"/>
 
 
 </RelativeLayout>
